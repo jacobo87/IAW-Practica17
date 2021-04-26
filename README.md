@@ -6,6 +6,11 @@
 ## Práctica 17: Balanceo de carga con HAProxy
 Modificaremos los archivos ```docker-compose.yml``` que hemos creado en las [Práctica 15](https://github.com/jacobo87/IAW-Practica-Compose) y [16](https://github.com/jacobo87/IAW-Practica16), y vamos a incluir un nuevo contenedor Docker con HAProxy para balancear la carga de los contenedores que ejecutan la aplicación web.
 
+Para ello debemos de abrir el puerto que usa el servicio [HAProxy](http://www.haproxy.org/) en nuestra instancia [AWS EC2](https://docs.aws.amazon.com/es_es/AWSEC2/latest/UserGuide/concepts.html).
+
+![](images/ec.png "EC2")
+
+
 ## Escalar los servicios en un archivo ```docker-compose.yml```
 Cuando ejecutamos docker-compose tenemos la posibilidad de indicar el número de instancias que queremos tener de cada uno de los servicios que vamos a crear.
 
@@ -16,8 +21,13 @@ El comando sería el siguiente:
 - ```SERVICE``` nombre del servicio a escalar.
 - ```NUM``` número de instancias que queremos del servio.
 
-Lanzamos el servicio
+Lanzamos el servicio 
+
 ![](images/docker2.png "docker")
+
+Comprobamos que hay tantos contenedores como los solicitados
+
+![](images/docker1.png "docker")
 
 ## Ejemplo de un archivo ```docker-compose.yml``` con un balanceador de carga
 Fragmento de un archivo ```docker-compose.yml``` que incluye un servicio de balanceo de carga con [HAProxy](http://www.haproxy.org/) que nos puede servir de ejemplo:
