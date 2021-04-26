@@ -13,8 +13,8 @@ El comando sería el siguiente:
 
 ```docker-compose up --scale SERVICE=NUM```
 
-- SERVICE nombre del servicio a escalar.
-- NUM número de instancias que queremos del servio.
+- ```SERVICE``` nombre del servicio a escalar.
+- ```NUM``` número de instancias que queremos del servio.
 
 ## Ejemplo de un archivo ```docker-compose.yml``` con un balanceador de carga
 Fragmento de un archivo ```docker-compose.yml``` que incluye un servicio de balanceo de carga con [HAProxy](http://www.haproxy.org/) que nos puede servir de ejemplo:
