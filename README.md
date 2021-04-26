@@ -33,12 +33,14 @@ services:
   apache:
     ...
 ```
-## Archivo de configuración ```haproxy.cfg````
-Parámetros del archivo de configuración de [HAProxy](http://www.haproxy.org/) es ```haproxy.cfg````.
+## Archivo de configuración ```haproxy.cfg```
+Parámetros del archivo de configuración de [HAProxy](http://www.haproxy.org/) es ```haproxy.cfg```.
 
-Ejemplo de ```haproxy.cfg````
+Ejemplo de ```haproxy.cfg``` en el contenedor [docker](https://www.docker.com/)
 
 ## REFERENCIAS
 - [José Juan Sánchez](https://josejuansanchez.org/iaw/practica-17/index.html)
-- [Práctica 15 - Jacobo Azmani]()
-- [Práctica 16 - Jacobo Azmani]()
+- [Práctica 15 - Jacobo Azmani](https://github.com/jacobo87/IAW-Practica-Compose)
+- [Práctica 16 - Jacobo Azmani](https://github.com/jacobo87/IAW-Practica16)
+- [HAProxy Configuración](http://cbonte.github.io/haproxy-dconv/2.2/configuration.html)
+- [Balancear un servicio web con HAProxy en Ubuntu](https://clouding.io/hc/es/articles/360010289000-Balancear-servicio-web-con-HAProxy-en-Ubuntu-18-04)
