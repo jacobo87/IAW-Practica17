@@ -4,7 +4,7 @@
 >Ciclo: CFGS Administración de Sistemas Informáticos en Red 
 
 ## Práctica 17: Balanceo de carga con HAProxy
-Modificaremos los archivos ```docker-compose.yml``` que hemos creado en las prácticas 15 y 16, y vamos a incluir un nuevo contenedor Docker con HAProxy para balancear la carga de los contenedores que ejecutan la aplicación web.
+Modificaremos los archivos ```docker-compose.yml``` que hemos creado en las [Práctica 15](https://github.com/jacobo87/IAW-Practica-Compose) y [16](https://github.com/jacobo87/IAW-Practica16), y vamos a incluir un nuevo contenedor Docker con HAProxy para balancear la carga de los contenedores que ejecutan la aplicación web.
 
 ## Escalar los servicios en un archivo ```docker-compose.yml```
 Cuando ejecutamos docker-compose tenemos la posibilidad de indicar el número de instancias que queremos tener de cada uno de los servicios que vamos a crear.
