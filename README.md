@@ -16,6 +16,9 @@ El comando sería el siguiente:
 - ```SERVICE``` nombre del servicio a escalar.
 - ```NUM``` número de instancias que queremos del servio.
 
+Lanzamos el servicio
+![](images/docker2.png "docker")
+
 ## Ejemplo de un archivo ```docker-compose.yml``` con un balanceador de carga
 Fragmento de un archivo ```docker-compose.yml``` que incluye un servicio de balanceo de carga con [HAProxy](http://www.haproxy.org/) que nos puede servir de ejemplo:
 ```bash
@@ -33,6 +36,10 @@ services:
   apache:
     ...
 ```
+
+Si accedemos al la **dirección IP** puerto **:1936** podremos ver toda la información que recoge [HAProxy](http://www.haproxy.org/).
+![](images/haproxy.png "HAProxy")
+
 ## Archivo de configuración ```haproxy.cfg```
 Parámetros del archivo de configuración de [HAProxy](http://www.haproxy.org/) es ```haproxy.cfg```.
 
