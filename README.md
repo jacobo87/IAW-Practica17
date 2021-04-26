@@ -34,12 +34,12 @@ Fragmento de un archivo ```docker-compose.yml``` que incluye un servicio de bala
 ```bash
 services:
   lb:
-    image: dockercloud/haproxy <1>
+    image: dockercloud/haproxy 
     ports:
-      - 80:80 <2>
-      - 1936:1936 <3>
+      - 80:80 
+      - 1936:1936 
     links:
-      - apache <4>
+      - apache
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock <5>
 
