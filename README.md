@@ -54,6 +54,8 @@ Si accedemos al la **dirección IP** puerto **:1936** podremos ver toda la infor
 Parámetros del archivo de configuración de [HAProxy](http://www.haproxy.org/) es ```haproxy.cfg```.
 
 Ejemplo de ```haproxy.cfg``` en el contenedor [docker](https://www.docker.com/)
+>Para acceder al contenedor debemos de ejecutar ```docker exec -it nº(contenedor) /bin/sh``` 
+
 ![](images/docker3.png "haproxy.cfg")
 
 ## REFERENCIAS
